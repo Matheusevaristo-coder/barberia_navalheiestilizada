@@ -1,0 +1,68 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    background-image: url('https://quartinhodecorado.com.br/wp-content/uploads/2023/10/Q25-2-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay; 
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; 
+    text-align: left; 
+}
+
+.card-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-content {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.card-content p {
+    margin: 10px 0;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px;
+}
+
+.card-actions button {
+    background-color: #000; 
+    color: #00FFFF; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-actions button:hover {
+    background-color: #333;
+    color: #00FFFF;
+}
+
+.card-actions button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  height: 100vh;
+  overflow: hidden; 
+  background-image: url('https://img.lovepik.com/bg/20231219/Classic-Barbershop-Captivating-Black-and-White-Photography-Background_2651923_wh860.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.agendamento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.agendamento-card {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.85); 
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+mat-card h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+mat-form-field mat-label {
+  color: #fff;
+  font-size: 16px;
+}
+
+mat-form-field input, mat-form-field mat-select {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none; 
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+mat-form-field input::placeholder {
+  color: #aaa;
+}
+
+mat-form-field input:focus, mat-form-field mat-select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #1E90FF; 
+  border: 1px solid #1E90FF; 
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+mat-error {
+  color: #f44336;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}

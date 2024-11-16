@@ -1,0 +1,93 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; 
+  background-image: url('https://casaeconstrucao.org/wp-content/uploads/2023/05/1-frase-para-barbearia.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: overlay; 
+}
+
+.payment-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.payment-card-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.payment-details {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.payment-details p {
+  margin: 10px 0;
+}
+
+.payment-details h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.payment-actions {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 10px;
+}
+
+.payment-actions button {
+  background-color: #000;
+  color: #00FFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.payment-actions button:hover {
+  background-color: #333;
+  color: #00FFFF;
+}
+
+.payment-actions button:active {
+  transform: scale(0.98);
+}
+
+button[disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

@@ -1,0 +1,67 @@
+:host {
+    display: block;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/fotos-premium/um-homem-em-uma-barbearia-com-barba-na-frente-de-um-espelho_697880-2646.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7); 
+    margin: 10px;
+}
+
+.titulo-login {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+mat-form-field input {
+    color: #FFFFFF; 
+}
+
+mat-form-field input:focus {
+    outline: none;
+    box-shadow: none; 
+    border: none; 
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #B22222;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+    border: 2px solid #1E90FF;
+}
+
+button:active {
+    transform: scale(0.98);
+}

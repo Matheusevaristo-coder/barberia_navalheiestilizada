@@ -1,0 +1,52 @@
+<div class="agendamento-container">
+  <mat-card class="agendamento-card">
+    <form [formGroup]="agendamentoForm" (ngSubmit)="agendar()">
+      <h2>Agende seu Serviço</h2>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+          matInput 
+          formControlName="nome" 
+          placeholder="Digite seu nome"
+        >
+        <mat-error *ngIf="agendamentoForm.get('nome')?.hasError('required')">
+          Nome é obrigatório
+        </mat-error>
+        <mat-error *ngIf="agendamentoForm.get('nome')?.hasError('minlength')">
+          Nome deve ter no mínimo 2 caracteres
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Serviço</mat-label>
+        <mat-select formControlName="servico">
+          <mat-option *ngFor="let servico of servicos" [value]="servico">
+            {{ servico }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Data do Agendamento</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dataAgendamento" [min]="minDate" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="agendamentoForm.get('dataAgendamento')?.hasError('required')">
+          Data é obrigatória
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Horário</mat-label>
+        <mat-select formControlName="horario">
+          <mat-option *ngFor="let horario of horariosDisponiveis" [value]="horario">
+            {{ horario }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Agendar</button>
+    </form>
+  </mat-card>
+</div>
